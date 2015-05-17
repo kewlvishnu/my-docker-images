@@ -1,5 +1,5 @@
 FROM busybox:latest
 
-RUN mkdir -p /var/www/html
+RUN mkdir -p /var/lib/mysql
 
-VOLUME ["/var/www/html"]
+VOLUME ["/var/lib/mysql"]
