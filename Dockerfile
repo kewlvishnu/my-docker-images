@@ -10,7 +10,7 @@ VOLUME /var/www/html
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
-chmod +x /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 # grr, ENTRYPOINT resets CMD now
 ENTRYPOINT ["/entrypoint.sh"]
