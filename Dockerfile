@@ -1,6 +1,6 @@
 FROM wordpress:latest
 
-RUN a2enmod rewrite expires headers
+RUN a2enmod rewrite expires headers deflate
 
 ADD uploads.ini /usr/local/etc/php/conf.d/
 
