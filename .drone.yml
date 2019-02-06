@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+branches:
+  - wordpress
+
+steps:
+- name: docker  
+  image: kewlvishnu/test-wordpress
+  settings:
+    repo: foo/bar
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
