@@ -5,9 +5,9 @@ branches:
 
 steps:
 - name: docker  
-  image: kewlvishnu/test-wordpress
+  image: plugins/docker
   settings:
-    repo: foo/bar
+    repo: kewlvishnu/test-wordpress
     username:
       from_secret: docker_username
     password:
